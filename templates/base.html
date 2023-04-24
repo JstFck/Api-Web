@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="background">
+        <nav class="navigation">
+            <a id="navigation" href="/">Welcome to weather API project</a>
+            <a id="login" href="/login">Login</a> | <a id="registration" href="/registration">Sing up</a>
+        </nav>
+    </div>
+    <div role="main" class="base">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
