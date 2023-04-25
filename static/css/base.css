@@ -68,6 +68,12 @@ a#registration {
     padding-left: 20px;
 }
 
+a#logout {
+    color: black;
+    font-size: 16px;
+    margin-left: 70%;
+}
+
 div.base {
     padding-left: 50px;
     padding-top: 100px;

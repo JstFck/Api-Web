@@ -10,7 +10,11 @@
     <div class="background">
         <nav class="navigation">
             <a id="navigation" href="/">Welcome to weather API project</a>
-            <a id="login" href="/login">Login</a> | <a id="registration" href="/registration">Sing up</a>
+            {% if not login %}
+                <a id="login" href="/login">Login</a> | <a id="registration" href="/registration">Sing up</a>
+            {% else %}
+                <a id="logout" href="/logout">Log out</a>
+            {% endif %}
         </nav>
     </div>
     <div role="main" class="base">

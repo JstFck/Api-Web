@@ -2,7 +2,11 @@
 
 {% block content %}
     <div class="main">
-        <p>Hello, {{ username }}</p>
-        <p>Your apikey: {{ apikey }}</p>
+        {% if login %}
+            <p>Hello, {{ username }}</p>
+            <p>Your apikey: {{ apikey }}</p>
+        {% else %}
+            <p>Login to use API</p>
+        {% endif %}
     </div>
 {% endblock %}
