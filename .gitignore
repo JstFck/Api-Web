@@ -1,2 +1,4 @@
 .idea
 db/
+data/__pycache__/
+forms/__pycache__/
