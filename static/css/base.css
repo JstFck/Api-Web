@@ -24,7 +24,7 @@ form.login {
     padding: 5px;
     padding-bottom: 10px;
     width: 350px;
-    height: 275px;
+    height: 300px;
     text-align: center;
     margin-top: 15%;
     margin-left: 38%;
@@ -35,6 +35,51 @@ body {
     background: url(../image/background.png) no-repeat;
     background-attachment: fixed;
     background-position: center bottom;
+}
+
+a#navigation {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a#registration {
+    color: black;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+a#login {
+    color: black;
+    font-size: 16px;
+    margin-left: 70%;
+    padding-right: 20px;
+}
+
+a#logout {
+    color: black;
+    font-size: 16px;
+    margin-left: 70%;
+}
+
+a#info {
+    color: black;
+}
+
+div.base {
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+div.main {
+    margin-left: 15%;
+    margin-top: 10%;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px 10px 10px 10px;
+    background: #b5bdc8;
+    background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
 }
 
 div.background {
@@ -49,42 +94,12 @@ div.background {
     right: 0px;
 }
 
-a#navigation {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-a#login {
-    color: black;
-    font-size: 16px;
-    margin-left: 70%;
-    padding-right: 20px;
-}
-
-a#registration {
-    color: black;
-    font-size: 16px;
-    padding-left: 20px;
-}
-
-a#logout {
-    color: black;
-    font-size: 16px;
-    margin-left: 70%;
-}
-
-div.base {
-    padding-left: 50px;
-    padding-top: 100px;
-}
-
-div.main {
+div.info {
     margin-left: 15%;
     margin-top: 10%;
     border: 1px solid;
     border-radius: 10px;
-    width: 500px;
+    width: 1000px;
     padding: 10px 10px 10px 10px;
     background: #b5bdc8;
     background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);

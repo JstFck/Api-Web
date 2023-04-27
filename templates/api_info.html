@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="info">
+        <p>To use API write GET-request on this URL: <code>http:/127.0.0.1:5000/api</code></p>
+        <ul>
+            <li><code>apikey</code>: apikey, which required to use API</li>
+            <li><code>city</code>: city name, which required to get info about city</li>
+        </ul>
+        <h3>Example of request and response</h3>
+        <ul>
+            <li>Request: <code>http://127.0.0.1:5000/api?apikey=(write your apikey here)&city=(write required city)</code></li>
+            <li>Response: <code>{ "(city name)": [ "+7(4) C", "30 km/h" ] }</code></li>
+        </ul>
+    </div>
+{% endblock %}
