@@ -12,9 +12,14 @@ import datetime
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'type_your_secret_key_there'
-app.config['PERMANENT_SESSION_LIFETIME'] = datetime.timedelta(days=14)
 
 PARAMS = {}
+
+
+@app.before_request
+def make_session_permanent():
+    session.permanent = True
+    app.permanent_session_lifetime = datetime.timedelta(days=14)
 
 
 @app.route('/')

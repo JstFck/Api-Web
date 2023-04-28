@@ -6,11 +6,16 @@
         <ul>
             <li><code>apikey</code>: apikey, which required to use API</li>
             <li><code>city</code>: city name, which required to get info about city</li>
+            <li><code>um</code> units of measurement: um=m metric (SI) / um=u USCS (used by default in US)</li>
+            <li><code>lang</code> supported languages: am ar af be bn ca da de el et fr fa gl hi hu ia id it lt mg
+                nb nl oc pl pt-br ro ru ta tr th uk vi zh-cn zh-tw </li>
+            <li><code>days</code> return specified day (max 3)</li>
+            <li><code>wind</code> return wind speed in m/s if wind=M</li>
         </ul>
         <h3>Example of request and response</h3>
         <ul>
-            <li>Request: <code>http://127.0.0.1:5000/api?apikey=(write your apikey here)&city=(write required city)</code></li>
-            <li>Response: <code>{ "(city name)": [ "+7(4) C", "30 km/h" ] }</code></li>
+            <li>Request: <code>http://127.0.0.1:5000/api?apikey=12345&city=moskow</code></li>
+            <li>Response: <code>{ "moskow": [ "Overcast", "+10(8) °C", "↘ 22 km/h" ] }</code></li>
         </ul>
     </div>
 {% endblock %}
